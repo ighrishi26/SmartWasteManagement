@@ -1,37 +1,37 @@
 {
     "success": true,
-    "dataset_size": 9,
-    "training_records": 7,
-    "testing_records": 2,
+    "dataset_size": 11,
+    "training_records": 8,
+    "testing_records": 3,
     "models": [
         {
             "model": "Linear Regression",
-            "mae": 20.0948,
-            "rmse": 20.1824,
-            "r2": 0.9518,
-            "training_time_seconds": 0.0309
+            "mae": 37.9085,
+            "rmse": 52.4301,
+            "r2": -1.6293,
+            "training_time_seconds": 0.0134
         },
         {
             "model": "Random Forest",
-            "mae": 73.3552,
-            "rmse": 103.5545,
-            "r2": -0.2683,
-            "training_time_seconds": 0.2363
+            "mae": 35.0861,
+            "rmse": 43.3224,
+            "r2": -0.7952,
+            "training_time_seconds": 0.1319
         },
         {
             "model": "Gradient Boosting",
-            "mae": 67.5918,
-            "rmse": 88.5463,
-            "r2": 0.0727,
-            "training_time_seconds": 0.0947
+            "mae": 41.3185,
+            "rmse": 45.0744,
+            "r2": -0.9433,
+            "training_time_seconds": 0.0504
         }
     ],
-    "best_model": "Linear Regression",
+    "best_model": "Random Forest",
     "best_model_metrics": {
-        "model": "Linear Regression",
-        "mae": 20.0948,
-        "rmse": 20.1824,
-        "r2": 0.9518,
-        "training_time_seconds": 0.0309
+        "model": "Random Forest",
+        "mae": 35.0861,
+        "rmse": 43.3224,
+        "r2": -0.7952,
+        "training_time_seconds": 0.1319
     }
 }
