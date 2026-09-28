@@ -8,7 +8,10 @@ from rest_framework.response import Response
 
 from .permissions import get_user_role
 from .role_permissions import ROLE_PERMISSIONS
-from .serializers import LoginSerializer
+from .serializers import (
+    LoginSerializer,
+    RegisterSerializer,
+)
 
 
 @api_view(["POST"])
@@ -41,6 +44,31 @@ def login(request):
             "permissions": permissions,
         },
     })
+    
+@api_view(["POST"])
+@permission_classes([AllowAny])
+def register(request):
+    serializer = RegisterSerializer(
+        data=request.data
+    )
+
+    serializer.is_valid(raise_exception=True)
+
+    user = serializer.save()
+
+    return Response(
+        {
+            "success": True,
+            "message": "Account created successfully.",
+            "user": {
+                "id": user.id,
+                "username": user.username,
+                "email": user.email,
+                "role": "Viewer",
+            },
+        },
+        status=201,
+    )
 
 
 @api_view(["GET"])

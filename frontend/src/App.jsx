@@ -24,6 +24,7 @@ import Reports from "./pages/Reports";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Register from "./pages/Register";
 
 import {
     AuthProvider,
@@ -75,6 +76,11 @@ function AppRoutes() {
             <Route
                 path="/login"
                 element={<Login />}
+            />
+
+            <Route
+                path="/register"
+                element={<Register />}
             />
 
             <Route
