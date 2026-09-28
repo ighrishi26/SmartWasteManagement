@@ -1,0 +1,6 @@
+date,location,waste_type,quantity_kg,day,holiday,special_event,footfall,temperature,rainfall
+2026-09-20,Main Campus,Organic,120,Sunday,false,false,800,28,2.5
+2026-09-21,Library,Paper,75,Monday,false,false,500,27,0
+2026-09-22,Canteen,Plastic,145,Tuesday,false,true,950,29,0
+2026-09-23,Engineering Block,Metal,60,Wednesday,false,false,650,28,1.2
+2026-09-24,Main Campus,Glass,90,Thursday,false,false,720,27,0
